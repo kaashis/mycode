@@ -15,3 +15,11 @@ print("The last item in the list (state): " + my_list[2] )
 iplist = [ 5060, "80", 55, "10.0.0.1", "10.20.30.1", "ssh" ]
 
 print("IP addresses: " + iplist[3] + ", and " + iplist[4])
+
+icecream= ["flavors", "salty"]
+
+icecream.append(99)
+
+user_input = input("Please enter your name:")
+
+print(f"{icecream[-1]} {icecream[0]}, and {user_input} chooses to be {icecream[1]}")
