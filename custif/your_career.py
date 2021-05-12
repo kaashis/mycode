@@ -2,12 +2,13 @@
 spending_list =["vacation", "charity", "stocks"]
 desert_island_list = ["books", "grill", "buddy"]
 
-
+print("What would you to spend your tax refund on?")
 print(spending_list)
-spending = input("What would you to spend your tax refund on?")
+spending = input(">")
 
+print("What would you bring on a desert island?")
 print(desert_island_list)
-desert_island = input("What would you bring on a desert island?")
+desert_island = input(">")
 
 
 if spending =="vacation":
@@ -16,7 +17,7 @@ if spending =="vacation":
     elif desert_island =="grill":
     	print("You should be a cook")
     elif desert_island =="buddy":
-    	print("You should be a traveler")  
+        print("You should be a travel journalist")  
     else:
         print("You did not pick correctly from the list provided")
 elif spending =="charity":
