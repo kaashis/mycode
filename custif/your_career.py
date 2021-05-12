@@ -4,11 +4,11 @@ desert_island_list = ["books", "grill", "buddy"]
 
 print("What would you to spend your tax refund on?")
 print(spending_list)
-spending = input(">")
+spending = input(">").lower()
 
 print("What would you bring on a desert island?")
 print(desert_island_list)
-desert_island = input(">")
+desert_island = input(">").lower()
 
 
 if spending =="vacation":
