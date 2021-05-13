@@ -12,8 +12,8 @@ def prompter():
     print("2. Sum of all the numbers in a list")
     print("3. Product of all the numbers in a list")
     print("4. Reverse a String")
-    print("5. Press q to quit")
-    
+    print("\n Please enter the corresponding number eg. 1 for Max")
+    print(" Or Press q to quit") 
     user_input = input(">")
 
     if user_input =="1":
@@ -46,7 +46,7 @@ def max3():
                 max=c
         return max;
 
-    print(f"The max of {num1},{num2},{num3} is ",max_of_three(num1,num2,num3))
+    print(f"\nThe max of {num1},{num2},{num3} is ",max_of_three(num1,num2,num3))
 
 def sumList():
     sum=0
@@ -60,6 +60,8 @@ def sumList():
         counter +=1
     for num in listxyz:
         sum +=int(num)
+
+    print("\nHere is the list you entered:",listxyz)
     print("The sum of the numbers in the list is",sum)
 
 def productList():
@@ -75,13 +77,14 @@ def productList():
      for num in listxyz:
          product *=int(num)
 
+     print("\nHere is the list you entered: ",listxyz)
      print("The product of the numbers in the list is",product)
 
 def reverseString():
     string= input("Enter the string that you would like to reverse:\n >")
     def reverse_string(string):
         x=len(string)-1
-        print("Here is your reversed string: ",end="")
+        print("\nHere is your reversed string: ",end="")
         while x>=0:
             print(string[x],end="")
             x -= 1
