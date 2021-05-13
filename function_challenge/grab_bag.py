@@ -55,20 +55,27 @@ def sumList():
     user_input=""
     while user_input.lower() !="d":
         user_input=input(f"Please enter number {counter} of the list or press d when done:")
-        listxyz.append(user_input)
+        if user_input !="d":
+            listxyz.append(user_input)
         counter +=1
     for num in listxyz:
-        sum +=num
+        sum +=int(num)
     print("The sum of the numbers in the list is",sum)
 
 def productList():
-    def product_list(listxyz=[44,55,10,30]):
-         product=1
-         for num in listxyz:
-             product *=num
-         return product 
+     product=1
+     listxyz=[]
+     counter=1
+     user_input=""
+     while user_input.lower() !="d":
+        user_input=input(f"Please enter number {counter} of the list or press d when done:")
+        if user_input !="d":
+            listxyz.append(user_input)
+        counter +=1
+     for num in listxyz:
+         product *=int(num)
 
-    print("The product of the numbers in the list is",product_list())
+     print("The product of the numbers in the list is",product)
 
 def reverseString():
     string= input("Enter the string that you would like to reverse:\n >")
