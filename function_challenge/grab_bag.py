@@ -49,13 +49,17 @@ def max3():
     print(f"The max of {num1},{num2},{num3} is ",max_of_three(num1,num2,num3))
 
 def sumList():
-    def sum_list(listxyz=[44,55,10,30]):
-        sum=0
-        for num in listxyz:
-            sum +=num
-        return sum
-
-    print("The sum of the numbers in the list is",sum_list())
+    sum=0
+    listxyz=[]
+    counter=1
+    user_input=""
+    while user_input.lower() !="d":
+        user_input=input(f"Please enter number {counter} of the list or press d when done:")
+        listxyz.append(user_input)
+        counter +=1
+    for num in listxyz:
+        sum +=num
+    print("The sum of the numbers in the list is",sum)
 
 def productList():
     def product_list(listxyz=[44,55,10,30]):
