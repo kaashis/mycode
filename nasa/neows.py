@@ -46,7 +46,7 @@ def main():
             if float(asterdict["absolute_magnitude_h"])<float(smallest["absolute_magnitude_h"]):
                 smallest=asterdict
             if asterdict["is_potentially_hazardous_asteroid"]:
-                count += 1
+             t   count += 1
     print("Largest assteroid in this date range: ",largest["name"])
     print("Smallest assteroid in this date range: ",smallest["name"])
     print("Number of potentially hazardous asteroid: ",count)
